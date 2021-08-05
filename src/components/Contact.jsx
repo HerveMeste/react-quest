@@ -1,9 +1,9 @@
 const Contact = () => {
-  const imgAvatar = "https://randomuser.me/api/portraits/men/57.jpg";
-  const firstName = "Fabien";
-  const lastName = "Desnoues";
+  const imgAvatar = "https://randomuser.me/api/portraits/men/85.jpg";
+  const firstName = "Hervé";
+  const lastName = "Meste";
   const fullName = firstName + ' ' + lastName;
-  const isConnected = true;
+  const connected = true;
 
   return (
     <div className="Contact">
@@ -11,7 +11,7 @@ const Contact = () => {
       <div>
         <h4>{fullName}</h4>
         <div className="status">
-          <div><span className={isConnected ? "status-online" : "status-offline"} />{isConnected ? "Online" : "Offline"}</div>
+          <div><span className={connected ? "status-online" : "status-offline"} />{connected ? "Online" : "Offline"}</div>
         </div>
       </div>
     </div>)
